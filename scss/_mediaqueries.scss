@@ -1,0 +1,128 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    /*Header*/
+    nav.navBar{
+        display: none;
+    }
+    .navBar-mobile{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4px;
+        .logo{
+            padding-left: 30px;
+            img{
+                width: 30px;
+            }
+        }
+        .menu-hamburguesa {
+            img{
+                 width: 30px;
+            }
+        }
+    }
+    /*Section*/
+    .section-home{
+        .containerUno {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .conteiner-img{
+                width: 95%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+        }
+        .conteiner-text {
+            width: 95%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .containerDos {
+            flex-direction: column;
+            .conteiner-video{
+                iframe{
+                    width: 95%;
+                    height: auto;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px){
+    .section-home{
+        width: 98%;
+        margin: 0 auto;
+        .conteiner-video{
+            iframe{
+                width: 400px;
+                height: 260px;
+            }
+        }
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px){
+    .ubicacion {
+        p{
+            margin-top: 20px;
+            text-align: center;
+            width: 90%;
+        }
+    }
+    .shop{
+        .conteiner-product {
+            width: 90%;
+        }
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px){
+    /*Dona*/
+    .donar{
+        .container-cards{
+            width: 90%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .cards{
+                width: 85%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+        }
+        .text{
+            width: 90%;
+            margin: 0 auto;
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+    /*Contacto*/
+    form{
+        width: 90%;
+        .conteiner-campos{
+            width: 90%;
+        }
+    }
+    .shop{
+        .conteiner-product {
+            width: 90%;
+            grid-template-columns: auto auto;
+            grid-gap: 15px;
+            .card-product{
+                padding-bottom: 40px;
+                padding-top: 40px;
+                margin-top: 35px;
+                a {
+                    padding: 12px 0px;
+                    width: 55%;
+                }
+            }
+        }
+    }
+}

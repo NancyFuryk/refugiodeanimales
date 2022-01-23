@@ -1,0 +1,407 @@
+@font-face {
+  font-family: 'Lato';
+  src: url("../assets/fonts/Lato-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-Regular.ttf"); }
+
+/* Globals */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0 auto; }
+
+p {
+  font-family: 'Roboto'; }
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #9270E7; }
+  header .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    header .navbar .logo {
+      width: 45px;
+      height: 45px; }
+      header .navbar .logo img {
+        width: 100%;
+        height: auto; }
+    header .navbar ul.navbar-nav {
+      margin: 0 auto; }
+    header .navbar .navbar-toggler {
+      margin-top: 0; }
+    header .navbar .nav-link {
+      color: white !important; }
+  header nav.navBar-mobile {
+    display: none; }
+  header ul.menuContainer {
+    display: flex; }
+    header ul.menuContainer li {
+      list-style: none;
+      padding-right: 10px;
+      padding-left: 10px;
+      border-right: 2px solid white;
+      display: flex;
+      align-items: center;
+      height: 25px; }
+      header ul.menuContainer li a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto';
+        font-size: 16px; }
+        header ul.menuContainer li a:hover {
+          text-decoration: underline; }
+
+/*Home*/
+.section-home {
+  margin-top: 40px; }
+  .section-home .containerUno {
+    display: flex;
+    justify-content: center; }
+    .section-home .containerUno .conteiner-img {
+      width: 600px;
+      height: auto;
+      margin-right: 20px; }
+      .section-home .containerUno .conteiner-img img {
+        width: 100%;
+        height: auto; }
+      .section-home .containerUno .conteiner-img button:hover {
+        background-color: transparent; }
+  .section-home .containerDos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-top: 40px; }
+    .section-home .containerDos .conteiner-video {
+      margin-left: 20px; }
+  .section-home .conteiner-text {
+    width: 300px;
+    height: auto; }
+
+section {
+  /* Extend */ }
+  section h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lato';
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: black; }
+  section .title, section .title-section {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lato';
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: black; }
+
+/*ubicaciones*/
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .ubicacion iframe {
+    width: 90%; }
+  .ubicacion p {
+    margin-top: 20px; }
+
+/*Donate*/
+.donar p {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Lato';
+  margin-top: 30px;
+  color: black; }
+
+.donar .container-cards {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto; }
+  .donar .container-cards .cards {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid black;
+    background: linear-gradient(90deg, #b688de 0%, #edd3ed 35%, white 100%);
+    padding: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    transition: 500ms; }
+    .donar .container-cards .cards:hover {
+      transform: scale(1.1); }
+    .donar .container-cards .cards p.left {
+      text-align: left;
+      font-size: 18px;
+      line-height: 30px; }
+    .donar .container-cards .cards p.right {
+      text-align: right;
+      font-size: 18px;
+      line-height: 30px; }
+    .donar .container-cards .cards .botton-left {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%; }
+    .donar .container-cards .cards .botton-right {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%; }
+    .donar .container-cards .cards button {
+      border: none;
+      background-color: #9270E7;
+      color: white;
+      padding: 12px 36px;
+      font-size: 16px;
+      border-radius: 6px;
+      margin-top: 32px; }
+      .donar .container-cards .cards button:hover {
+        cursor: pointer;
+        background-color: #9270E7; }
+    .donar .container-cards .cards .text {
+      width: 60%;
+      margin: 0 auto; }
+      .donar .container-cards .cards .text p {
+        font-size: 20px; }
+
+/*contact*/
+form {
+  position: relative;
+  width: 60%;
+  border: 4px solid black;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 100px;
+  margin-top: 62px; }
+  form div {
+    display: flex;
+    flex-direction: column;
+    width: 70%; }
+    form div p {
+      font-family: 'Lato';
+      font-size: 20px;
+      margin: 0 auto; }
+  form .conteiner-campo label {
+    font-size: 18px;
+    font-family: 'Lato';
+    margin-bottom: 5px; }
+  form .conteiner-campo input {
+    border: 2px solid black;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: 'Lato'; }
+  form .conteiner-campo textarea {
+    height: 100px;
+    border: 2px solid black; }
+  form input.enviar {
+    border: none;
+    background-color: #9270E7;
+    color: white;
+    padding: 12px 36px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-top: 32px;
+    position: absolute;
+    left: 169px;
+    bottom: 28px; }
+    form input.enviar:hover {
+      cursor: pointer;
+      background-color: #7646F0; }
+
+/*Shop*/
+.shop .title, .shop section .title-section, section .shop .title-section {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Lato';
+  margin-bottom: 30 px;
+  margin-top: 30px;
+  color: black; }
+
+.shop .conteiner-product {
+  width: 60%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px;
+  margin: 0 auto; }
+  .shop .conteiner-product .card-product {
+    margin-top: 75px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    border: 2px solid black; }
+    .shop .conteiner-product .card-product img {
+      width: 80%;
+      margin: 0 auto;
+      display: flex; }
+    .shop .conteiner-product .card-product p {
+      text-align: center;
+      margin-top: 35px;
+      margin-bottom: 12px; }
+    .shop .conteiner-product .card-product a {
+      width: 38%;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background-color: #9270E7;
+      color: white;
+      font-family: 'Lato';
+      text-decoration: none;
+      padding: 12px 36px;
+      font-size: 16px;
+      border-radius: 6px;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 47px; }
+      .shop .conteiner-product .card-product a:hover {
+        background-color: #7646F0;
+        cursor: pointer; }
+
+.paginado {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; }
+  .paginado ul a {
+    color: #7646F0; }
+
+footer {
+  height: 200px;
+  background-color: #9270E7;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px; }
+  footer .redes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 220px;
+    margin: 0 auto; }
+    footer .redes div {
+      width: 30px;
+      height: auto;
+      border-radius: 10px; }
+      footer .redes div img {
+        width: 100%;
+        height: auto; }
+    footer .redes #youtube {
+      height: 22px; }
+    footer .redes .icon-facebook {
+      background: #3B5998; }
+    footer .redes .icon-youtube {
+      background: #d71e18; }
+    footer .redes .icon-instagram {
+      background: #E1306C; }
+  footer .copy {
+    margin: 0 auto;
+    color: white;
+    font-size: 12px;
+    margin-top: 15px; }
+
+/* Extend */
+.boton, .boton-primario {
+  border: 1px solid #339dc5;
+  background-color: #339dc5;
+  padding: 10px 20px; }
+
+.boton-primario {
+  color: black; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /*Header*/
+  nav.navBar {
+    display: none; }
+  .navBar-mobile {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px; }
+    .navBar-mobile .logo {
+      padding-left: 30px; }
+      .navBar-mobile .logo img {
+        width: 30px; }
+    .navBar-mobile .menu-hamburguesa img {
+      width: 30px; }
+  /*Section*/
+  .section-home .containerUno {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .section-home .containerUno .conteiner-img {
+      width: 95%;
+      margin: 0 auto;
+      margin-bottom: 20px; }
+  .section-home .conteiner-text {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center; }
+  .section-home .containerDos {
+    flex-direction: column; }
+    .section-home .containerDos .conteiner-video iframe {
+      width: 95%;
+      height: auto;
+      margin-bottom: 40px; } }
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px) {
+  .section-home {
+    width: 98%;
+    margin: 0 auto; }
+    .section-home .conteiner-video iframe {
+      width: 400px;
+      height: 260px; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  .ubicacion p {
+    margin-top: 20px;
+    text-align: center;
+    width: 90%; }
+  .shop .conteiner-product {
+    width: 90%; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  /*Dona*/
+  .donar .container-cards {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .donar .container-cards .cards {
+      width: 85%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      margin-top: 20px; }
+  .donar .text {
+    width: 90%;
+    margin: 0 auto; }
+    .donar .text p {
+      font-size: 16px; }
+  /*Contacto*/
+  form {
+    width: 90%; }
+    form .conteiner-campos {
+      width: 90%; }
+  .shop .conteiner-product {
+    width: 90%;
+    grid-template-columns: auto auto;
+    grid-gap: 15px; }
+    .shop .conteiner-product .card-product {
+      padding-bottom: 40px;
+      padding-top: 40px;
+      margin-top: 35px; }
+      .shop .conteiner-product .card-product a {
+        padding: 12px 0px;
+        width: 55%; } }

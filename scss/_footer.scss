@@ -1,0 +1,53 @@
+footer {
+    height: 200px;
+    background-color: $violet;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    .redes{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 220px;
+        margin: 0 auto;
+        div{
+            @include size(30px, auto);
+            border-radius: 10px;
+            img{
+                @include size(100%, auto);
+            }
+        }
+        #youtube{
+            height: 22px;
+        }
+        $redes: (
+            facebook: #3B5998,
+            youtube: #d71e18,
+            instagram: #E1306C,
+        );
+
+        @each $i, $color in $redes {
+            .icon-#{$i} {
+                background: $color;
+            }
+        }
+    }
+    .copy{
+        margin: 0 auto;
+        color: white;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+}
+/* Extend */
+.boton {
+    border: 1px solid #339dc5;
+    background-color: #339dc5;
+    padding: 10px 20px;
+}
+
+.boton-primario {
+    @extend .boton;
+    color: black;
+}
