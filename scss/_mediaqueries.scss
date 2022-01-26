@@ -74,6 +74,15 @@
     .shop{
         .conteiner-product {
             width: 90%;
+            .card-product {
+                img{
+                    height: 100px;
+                    width: 100px;
+                }
+               p{
+                font-size: 14px;
+               }
+            }
         }
     }
 }

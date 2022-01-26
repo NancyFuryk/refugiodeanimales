@@ -105,14 +105,17 @@ section{
                 font-size: 18px;
                 line-height: 30px;
             }
+            p.text{
+                font-size: 20px;
+            }
             .botton-left {
                 display: flex;
-                justify-content: flex-start;
+                justify-content: center;
                 width: 100%;
             }
             .botton-right {
                 display: flex;
-                justify-content: flex-end;
+                justify-content: center;
                 width: 100%;
             }
             button {
@@ -218,7 +221,8 @@ form{
             padding-bottom: 75px;
             border: 2px solid black;
             img{
-                width: 80%;
+                height: 200px;
+                width: 60%;
                 margin: 0 auto;
                 display: flex;
             }

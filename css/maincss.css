@@ -12,7 +12,8 @@
   padding: 0; }
 
 body {
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow-x: hidden; }
 
 p {
   font-family: 'Roboto'; }
@@ -146,13 +147,15 @@ section {
       text-align: right;
       font-size: 18px;
       line-height: 30px; }
+    .donar .container-cards .cards p.text {
+      font-size: 20px; }
     .donar .container-cards .cards .botton-left {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       width: 100%; }
     .donar .container-cards .cards .botton-right {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       width: 100%; }
     .donar .container-cards .cards button {
       border: none;
@@ -240,7 +243,8 @@ form {
     padding-bottom: 75px;
     border: 2px solid black; }
     .shop .conteiner-product .card-product img {
-      width: 80%;
+      height: 200px;
+      width: 60%;
       margin: 0 auto;
       display: flex; }
     .shop .conteiner-product .card-product p {
@@ -368,7 +372,12 @@ footer {
     text-align: center;
     width: 90%; }
   .shop .conteiner-product {
-    width: 90%; } }
+    width: 90%; }
+    .shop .conteiner-product .card-product img {
+      height: 100px;
+      width: 100px; }
+    .shop .conteiner-product .card-product p {
+      font-size: 14px; } }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   /*Dona*/
